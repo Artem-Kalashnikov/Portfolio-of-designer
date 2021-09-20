@@ -1,4 +1,7 @@
+@import url(./gilroy.css);
+
 .container{
+    font-family: 'Gilroy-Regular';
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
@@ -35,6 +38,7 @@ button{
 }
 .about__header--name{
     margin-top: 76.5px;
+    line-height: 58.61px;
     font-size: 47px;
     font-weight: 700;
     max-width: 124px;
@@ -53,6 +57,7 @@ button{
     transform: rotate(-90deg);
     margin-left: auto;
     margin-top: 71px;
+    height: 30px;
 }
 
 .about__foto{
@@ -62,9 +67,52 @@ button{
     background-image: url(./chelik-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    
     display: flex;
 }
+.about__text{
+    text-align: center;
+    margin-top: 88px;
+    padding: 110px;
+    max-height: 510px;
+}
+.about__text--content{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 22px;
+    max-width: 485px;
+    margin: 0 auto;
+}
+.about__text--text{
+    padding-bottom: 50px;
+    text-align: center;
+    margin-top: 70px;
+}
+h2{
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+.icon{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.icon__icon{
+    margin: 25px;
+    text-align: center;
+}
+.icon__icon--text{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 1100px) {
     .about__header{
         justify-content: start ;
@@ -81,10 +129,13 @@ button{
     .about__header--name{
         margin: 10px  auto;
     }   
+    .about__foto{
+        margin-top: -45px;
+    }
 }
 @media (max-width: 938px) {
     .about__foto--mob{
-        margin-top: -45px;
+        margin-top: -65px;
         background-image: url(./chelik-mob.svg);
         width: 317px;
         height: 478px;
